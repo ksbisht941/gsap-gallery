@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: #06112F;
+}
+
+.home-container {
+    width: 100%;
+    height: 100%;
+}
+
+.home-container .video-wrapper {
+    position: absolute;
+    top: 0;
+    
+    height: 100%;
+    width: 20%;
+}
+
+.home-container .video-wrapper:not(:last-child) {
+    border-right: 1px solid rgba(221, 221, 221, 0.1);
+}
+
+.home-container .video-wrapper .video {
+    position: absolute;
+    transition: transform .3s ease;
+    height: 100%;
+    width: 0%;
+    overflow: hidden;
+
+    clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0%);
+}
+
+.home-container .video-wrapper .video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+.home-container .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    height: 182px;
+    width: 404px;
+    overflow: hidden;
+} 
+
+.home-container .content p {
+    font-size: 40px;
+    line-height: 60px;
+    height: 60px;
+    overflow: hidden;
+    font-weight: 600;
+    color: inherit;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.home-container .content p span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 155%;
+}
+
+.home-container .content hr {
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%) scaleX(0);
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+.home-container .content h1 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 120px;
+    overflow: hidden;
+    height: 120px;
+    letter-spacing: 4px;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    position: relative;
+}
+
+.home-container .content h1 span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: -50%;
+}
